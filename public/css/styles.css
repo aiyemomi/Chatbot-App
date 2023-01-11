@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  /* background-color: #251B37; */
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  overflow: hidden;
+}
+#main{
+width: 100vw;
+max-width: 540px;
+height: 100vh;
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+h2{
+  text-align: center;
+  background: blue;
+  color: red;
+  padding: 8px;
+  text-shadow: 2px 7px 5px rgba(0,0,0,0.3),
+    0px -4px 10px rgba(255,255,255,0.3);
+    margin-bottom: 8px;
+}
+#msg_area{
+  height: 82%;
+  padding: 0 12px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+#bot{
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/felix-robo-ico.jpg');
+  background-size: 100%;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#robot{
+  display: flex;
+  align-items: center;
+
+}
+h3{
+font-size: 20px;
+}
+#input{
+  height: 7%;
+  display:grid;
+  grid-template-columns: 70% 30%;
+  margin: 8px 16px;
+  border-radius: 32px;
+  background: linear-gradient(#ececee 50%, #1c1f46 50%);
+  box-shadow: inset 0 1px 0 #777;
+}
+.text{
+  font-size: 15px;
+  background: #ececee;
+  color: #333;
+  border-radius: 32px 0 32px 32px;
+  padding: 0 16px;
+  border: solid 1px #777;
+  border-right: none;
+}
+.send{
+  font-size: 15px;
+  color: #eee;
+  background: #1c1f46;
+  border: none;
+  border-radius: 32px;
+  transition-duration: 0.2s;
+}
+.send:active{
+  font-size: 12px;
+
+}
+
+::-webkit-scrollbar{
+  width: 0;
+}
+
+.left{
+  color: #000;
+  background-color: red;
+  border-radius: 0 16px 16px;
+}
+
+.right{
+  color: blue;
+  background-color: purple;
+  border-radius: 16px 16px 0;
+  float: right;
+}
+.left, .right{
+  font-size: 18px;
+display: inline-block;
+width: auto;
+max-width: 60%;
+padding: 14px;
+word-wrap: break-word;
+margin: 8px 14px;
+}
+
+.msgCon1, .msgCon2{
+  width: 100%;
+  display: inline-block;
+}
